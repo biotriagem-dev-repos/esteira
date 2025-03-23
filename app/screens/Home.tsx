@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet, NativeModules } from 'react-native';
+import { HeaderAppComponent } from '../../components/HeaderApp';
+
 
 const { SerialPortModule } = NativeModules;
 
-export default function App() {
+export default function Home() {
   const [status, setStatus] = useState('');
   const [speed, setSpeed] = useState(0);
 
@@ -27,8 +29,10 @@ export default function App() {
       .catch((err: string) => setStatus('Erro: ' + err));
   };
 
+
   return (
     <View style={styles.container}>
+      <HeaderAppComponent/>
       <Text style={styles.title}>Controle da Esteira</Text>
       <Button title="Abrir Porta" onPress={openPort} />
       <Button title="Fechar Porta" onPress={closePort} />
@@ -48,5 +52,5 @@ const styles = StyleSheet.create({
   title: { fontSize: 24, marginBottom: 20 },
   info: { fontSize: 18, marginVertical: 10 },
   buttonsRow: { flexDirection: 'row', justifyContent: 'space-between', width: '80%', marginVertical: 10 },
-  status: { fontSize: 16, marginTop: 20 }
+  status: { fontSize: 16, marginTop: 20 },
 });
