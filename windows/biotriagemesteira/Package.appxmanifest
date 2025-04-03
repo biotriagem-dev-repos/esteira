@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="ff574b65-23c7-48bc-91db-9bd0eff36207"
+    Name="606a089c-b297-42db-8a55-359d571c7881"
     Publisher="CN=UserBook"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="ff574b65-23c7-48bc-91db-9bd0eff36207" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="606a089c-b297-42db-8a55-359d571c7881" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>biotriagemesteira</DisplayName>
